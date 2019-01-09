@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - People's first SMS and Data Provider | Communication| Data</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script async src="//static.zotabox.com/7/1/71f7fce245dd7d944ba1605b448fa337/widgets.js"></script>
+    </head>
+<body>
+    <div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                @Html.ActionLink("MobileShops", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+           
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">@Html.ActionLink("Home", "Index", "Home", new { @class = "nav-link nav-anchor" })</li>
+                    <li class="nav-item">@Html.ActionLink("About", "About", "Home", new{@class= "nav-link nav-anchor" })</li>
+                    <li class="nav-item">@Html.ActionLink("Contact", "Contact", "Home", new { @class = "nav-link nav-anchor" })</li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid body-content">
+        @RenderBody()
+        
+        <footer class="bg-danger">
+            <p class="text-center text-white">&copy; @DateTime.Now.Year - MobileShops</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,217 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container-fluid" id="home-caption">
+        <br />
+        <h4>COMMUNICATIONS ACROSS ALL MEDIUM</h4>
+        <h1>Communicate like never before, Buy Amazing data bundles</h1>
+        <h3>Affordable data plan accross all network</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    @Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", @class = "nav-link nav-anchor btn btn-md btn-danger text-white" })
+                </div>
+                <div class="col-sm-4">
+                    @Html.ActionLink("Login", "Login", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", @class = "nav-link nav-anchor btn btn-md btn-primary text-white" })
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="carousel-home" class="carousel slide mx-auto" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-home" data-slide-to="1"></li>
+            <li data-target="#carousel-home" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../../images/chris-wilson.png" alt="img-first">
+            </div>
+            <div class="carousel-item">
+                <img src="../../images/devlin-oneil.png" alt="img-second">
+            </div>
+            <div class="carousel-item">
+                <img src="../../images/jacinda-shelly.png" alt="img-third">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#carousel-home" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-home" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
+</div>
+<section id="pricing">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="mx-auto text-center"> <i class="fas fa-laptop fa-4x text-danger"></i></h2>
+                        <h3 class="mx-auto text-center">
+                            AUTOMATION
+                        </h3>
+                        <p>
+                            This website is 90% automated, hence, delivery is superb!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="mx-auto text-center">  <i class="fas fa-briefcase fa-4x text-info"></i></h2>
+                        <h3 class="mx-auto text-center">
+                            AFFORDABILITY
+                        </h3>
+                        <p>
+                            If it's not affordable, it's not mobileshop! Quality + Affordability + Legitimacy = mobileshop
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="mx-auto text-center"> <i class="fas fa-headset fa-4x text-success"></i></h2>
+                        <h3 class="mx-auto text-center">
+                            SUPPORT
+                        </h3>
+                        <p>
+                            You are not alone, our customer service is just a click away
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="jumbotron jumbotron-fluid bg-gradient-primary bg-primary" id="plans">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <h1 class="mx-auto text-center">Data Plans</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="mx-auto text-center"> MTN</h2>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">250MB = #250</a>
+                            <a href="#" class="list-group-item list-group-item-action">500MB = #370</a>
+                            <a href="#" class="list-group-item list-group-item-action">1GB = #450</a>
+                            <a href="#" class="list-group-item list-group-item-action">1.5GB = #900</a>
+                            <a href="#" class="list-group-item list-group-item-action">2GB = #940</a>
+                            <a href="#" class="list-group-item list-group-item-action">3GB = #1950</a>
+                            <a href="#" class="list-group-item list-group-item-action">5GB = #2350</a>
+                            <a href="#" class="list-group-item list-group-item-action">10GB = #5950</a>
+                            <a href="#" class="list-group-item list-group-item-action">15GB = #8900</a>
+                            <a href="#" class="list-group-item list-group-item-action">20GB = #11850</a>
+                            <a href="#" class="list-group-item list-group-item-action">90 Days Validity</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="mx-auto text-center"> AIRTEL</h2>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">1.5GB = #950</a>
+                            <a href="#" class="list-group-item list-group-item-action">3.5GB = #1,900</a>
+                            <a href="#" class="list-group-item list-group-item-action">5GB = #2,375</a>
+                            <a href="#" class="list-group-item list-group-item-action">7GB = #3,325</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="mx-auto text-center"> GLO</h2>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action"> 1.6GB/2GB = #900</a>
+                            <a href="#" class="list-group-item list-group-item-action"> 3.65GB/4.5GB = #1,800</a>
+                            <a href="#" class="list-group-item list-group-item-action">5.75GB/7.2GB = #2,250</a>
+                            <a href="#" class="list-group-item list-group-item-action"> 7GB/8.25GB = #2,650</a>
+                            <a href="#" class="list-group-item list-group-item-action">10GB/12.5GB = #3,550</a>
+                            <a href="#" class="list-group-item list-group-item-action"> 12.5GB/15.6GB = #4,450</a>
+                            <a href="#" class="list-group-item list-group-item-action"> 20GB/25GB = #7,000</a>
+                            <a href="#" class="list-group-item list-group-item-action">26GB/32.5GB = #8,600</a>
+                            <a href="#" class="list-group-item list-group-item-action">42GB/52.5GB = #13,000</a>
+                            <a href="#" class="list-group-item list-group-item-action">30 Days Validity</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="mx-auto text-center"> ETISALAT</h2>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">250MB = #250</a>
+                            <a href="#" class="list-group-item list-group-item-action">500MB = #350</a>
+                            <a href="#" class="list-group-item list-group-item-action">1GB = #650</a>
+                            <a href="#" class="list-group-item list-group-item-action">1.5GB = #1000</a>
+                            <a href="#" class="list-group-item list-group-item-action">2GB = #1250</a>
+                            <a href="#" class="list-group-item list-group-item-action">3GB = #1950</a>
+                            <a href="#" class="list-group-item list-group-item-action">5GB = #3100</a>
+                            <a href="#" class="list-group-item list-group-item-action"> 11.5GB = #7000</a>
+                            <a href="#" class="list-group-item list-group-item-action">15GB = #8850</a>
+                            <a href="#" class="list-group-item list-group-item-action">27.5GB = #16,000</a>
+                            <a href="#" class="list-group-item list-group-item-action">30 Days Validity</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid" id="bulk-sms">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <h1 class="mx-auto text-center">BULK SMS PROVIDER</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+            </div>
+
+        </div>
+    </div>
+</div>
+<section class="jumbotron jumbotron-fluid container-fluid" id="contact-home">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="contact-h1">
+                <h1 class="text-center"> Contact US</h1>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div id="zbwid-ddfa5304"></div>
+        </div>
+        <div class="col-md-6">
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=1%2C%20Motorways%20center%2C%20Alausa%2Cikeja&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de">werbeagentur</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
